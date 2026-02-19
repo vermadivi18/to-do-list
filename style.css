@@ -1,0 +1,143 @@
+/* ===== RESET ===== */
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* ===== BODY ===== */
+body{
+    background: linear-gradient(135deg,#667eea,#764ba2);
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* ===== MAIN CONTAINER ===== */
+body > div:first-child,
+.task-list{
+    width:100%;
+}
+
+body{
+    flex-direction:column;
+}
+
+/* ===== INPUT SECTION ===== */
+body > div:first-child{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+    width:400px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+    margin-bottom:20px;
+}
+
+/* TEXTAREA */
+.task{
+    width:100%;
+    height:80px;
+    padding:10px;
+    font-size:16px;
+    border-radius:8px;
+    border:2px solid #ddd;
+    resize:none;
+    outline:none;
+    transition:0.3s;
+}
+
+.task:focus{
+    border-color:#667eea;
+}
+
+/* ADD BUTTON */
+.add{
+    width:100%;
+    margin-top:12px;
+    padding:12px;
+    border:none;
+    background:#667eea;
+    color:white;
+    font-size:16px;
+    border-radius:8px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.add:hover{
+    background:#5a67d8;
+    transform:scale(1.03);
+}
+
+/* ===== TASK LIST ===== */
+.task-list{
+    background:white;
+    width:400px;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.2);
+}
+
+/* LIST */
+.list{
+    list-style:none;
+}
+
+/* TASK ITEM */
+.list li{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    background:#f4f6ff;
+    padding:12px;
+    margin-bottom:10px;
+    border-radius:8px;
+    font-size:16px;
+    transition:0.3s;
+}
+
+.list li:hover{
+    background:#e3e7ff;
+}
+
+/* DELETE BUTTON */
+.list button{
+    background:#ff4d4d;
+    color:white;
+    border:none;
+    padding:6px 10px;
+    border-radius:6px;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.list button:hover{
+    background:#e60000;
+    transform:scale(1.05);
+}
+
+/* ===== HEADING TEXT ===== */
+body::before{
+    content:"✨ My To Do List";
+    color:white;
+    font-size:28px;
+    font-weight:bold;
+    margin-bottom:20px;
+}
+
+/* ===== TASK LIST HEADING ===== */
+
+.task-heading{
+    display:block;          /* important for label */
+    text-align:center;
+    font-size:24px;
+    font-weight:600;
+    margin-bottom:15px;
+    color:#f0f3ff;
+    letter-spacing:1px;
+    text-transform:uppercase;
+    position:relative;
+}
+
